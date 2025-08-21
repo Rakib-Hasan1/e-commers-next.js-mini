@@ -1,15 +1,21 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Federant, Mozilla_Headline } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/ui/navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const federant = Federant({
   subsets: ["latin"],
+  variable: "--font-federant",
+  weight: "400",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const mozillaHeadline = Mozilla_Headline({
   subsets: ["latin"],
+  variable: "--font-mozillaHeadline",
+  weight: ["400", "700"],
+  display: "swap",
 });
+
 
 export const metadata = {
   title: "Create Next App",
@@ -20,9 +26,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${federant.variable} ${mozillaHeadline.variable}`}
       >
-        {children}
+        <Navbar/>
+        <main className="min-h-screen">
+          {children}
+        </main>
       </body>
     </html>
   );
