@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -12,10 +12,14 @@ export default function Hero() {
     return (
         <div>
             <Swiper
-                modules={[Navigation, Pagination]}
+                modules={[Autoplay, Navigation, Pagination]}
                 spaceBetween={50}
                 slidesPerView={1}
                 navigation
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}

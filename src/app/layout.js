@@ -1,6 +1,6 @@
 import { Federant, Mozilla_Headline } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/ui/navbar";
+import Navbar from "@/components/navbar";
 
 const federant = Federant({
   subsets: ["latin"],
