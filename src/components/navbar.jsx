@@ -14,7 +14,7 @@ export default function Navbar() {
                     {/* Logo / Brand */}
                     <div className="flex-shrink-0">
                         <Link href="/">
-                            <h1 className="text-2xl font-bold font-federant">ShopEase</h1>
+                            <h1 className="text-2xl font-bold font-federant hover:scale-105 transition">ShopEase</h1>
                         </Link>
                     </div>
 
@@ -26,8 +26,8 @@ export default function Navbar() {
                         <Link href="/products" className="hover:text-blue-600">
                             Products
                         </Link>
-                        <Link href="/dashboard" className="hover:text-blue-600">
-                            Dashboard
+                        <Link href="/addproduct" className="hover:text-blue-600">
+                            Add Product
                         </Link>
                         <Link href="/login" className="hover:text-blue-600">
                             Login
@@ -55,8 +55,8 @@ export default function Navbar() {
                     <Link href="/products" className="block px-3 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">
                         Products
                     </Link>
-                    <Link href="/dashboard" className="block px-3 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">
-                        Dashboard / Add Product
+                    <Link href="/addproduct" className="hover:text-blue-600">
+                        Add Product
                     </Link>
                     <Link href="/login" className="block px-3 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">
                         Login

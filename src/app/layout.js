@@ -2,6 +2,7 @@ import { Federant, Mozilla_Headline } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Providers } from "./providers";
 
 const federant = Federant({
   subsets: ["latin"],
@@ -29,11 +30,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${federant.variable} ${mozillaHeadline.variable}`}
       >
-        <Navbar/>
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer/>
+        <Navbar />
+        <Providers>
+          <main className="min-h-screen">
+            {children}
+          </main>
+        </Providers>
+        <Footer />
       </body>
     </html>
   );

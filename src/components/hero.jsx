@@ -25,10 +25,10 @@ export default function Hero() {
                 onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide>
-                    <Image src="/images/8852145.jpg" alt="banner" width={500} height={500} className='w-full h-[80vh] object-cover' />
+                    <Image src="/images/cova-software-QHa2BO6AlAg-unsplash (1).jpg" alt="banner" width={500} height={500} className='w-full h-[80vh] object-cover' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/images/8852951.jpg" alt="banner" width={500} height={500} className='w-full h-[80vh] object-cover' />
+                    <Image src="/images/mike-petrucci-c9FQyqIECds-unsplash (1).jpg" alt="banner" width={500} height={500} className='w-full h-[80vh] object-cover' />
                 </SwiperSlide>
             </Swiper>
         </div>
