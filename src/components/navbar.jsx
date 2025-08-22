@@ -14,7 +14,7 @@ export default function Navbar() {
                     {/* Logo / Brand */}
                     <div className="flex-shrink-0">
                         <Link href="/">
-                            <h1 className="text-2xl font-bold font-federant">Brand</h1>
+                            <h1 className="text-2xl font-bold font-federant">ShopEase</h1>
                         </Link>
                     </div>
 
