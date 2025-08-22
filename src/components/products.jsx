@@ -12,7 +12,7 @@ export default async function Products() {
           <h1 className='font-bold text-3xl text-primary text-center pt-10'>Top Selling Products</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-16">
             {products.map((p) => (
-              <Link key={p._id} href={`/product/${p._id}`}>
+              <Link key={p._id} href={`/products/${p._id}`}>
                 <div className="card bg-base-100 hover:scale-105 hover:shadow-md transition">
                   <figure>
                     <Image width={500} height={500} src={p.image} alt={p.name} className="h-56 w-full object-cover" />
