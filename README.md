@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛍️ E-Commerce Hero Slider
 
-## Getting Started
+A modern **E-commerce Hero Section** built with **Next.js 13, Tailwind CSS, and Swiper.js**.  
+This project features a dynamic hero slider with smooth autoplay, navigation, pagination, and left-aligned promotional text with a call-to-action button that links directly to the **Products Page**.  
 
-First, run the development server:
+---
+
+## 🚀 Live Demo
+🔗 [View Live Project](https://e-commers-ebon.vercel.app)  
+
+---
+
+## ✨ Features
+- 🎞️ **Hero Slider** with autoplay, navigation arrows, and pagination dots  
+- 🖼️ **High-quality responsive images** using Next.js `<Image />`  
+- 🎨 **Modern UI** styled with Tailwind CSS  
+- 📱 **Fully responsive** for mobile, tablet, and desktop  
+- 🔲 **Text Overlay with Gradient** for better readability on all backgrounds  
+- 🛒 **Call-to-action button** linking to `/products` page  
+
+---
+
+## 🛠️ Tech Stack
+- **Next.js 15** – React framework for server-side rendering and routing  
+- **Tailwind CSS** – Utility-first styling for responsive design  
+- **Swiper.js** – Modern touch slider for React  
+- **React** – Component-based UI library  
+
+---
+
+## 📂 Project Structure
 
 ```bash
+ecommerce-hero-slider/
+├─ public/
+│  └─ images/                 # Hero slider images
+├─ app/
+│  ├─ page.js                 # Main homepage
+│  └─ products/
+│     └─ page.js              # Products page
+└─ components/
+   └─ Hero.jsx                # Hero component with Swiper slider
+
+---
+
+## ⚙️ Setup & Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/ecommerce-hero-slider.git
+   cd ecommerce-hero-slider
+
+npm install
+# or
+yarn install
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
